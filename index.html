@@ -1527,7 +1527,7 @@ const translations = {
     'footer.l1': 'Privacy',
     'footer.l2': 'Terms of use',
     'footer.l3': 'Cookies',
-    'footer.copy': '© 2025 OsitoPolar — <a href="#">Inteligencia Artesanal</a>. All rights reserved.',
+    'footer.copy': '© 2026 OsitoPolar — <a href="#">Inteligencia Artesanal</a>. All rights reserved.',
     'footer.made': 'Made with ❤️ to keep the cold where it belongs.',
   }
 };
@@ -1553,12 +1553,12 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
-/* ─── Mobile menu ──────────────────────────────────────────── */
+/* ─── Mobile menu ─────────────────----------─────────────────────────── */
 function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
-/* ─── IntersectionObserver reveal ─────────────────────────── */
+/* ─── IntersectionObserver reveal ──────────------───────────────── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1570,7 +1570,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-/* ─── Smooth active nav link ────────────────────────────────── */
+/* ─── Smooth active nav link ───────----------─────────────────────────── */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 const sectionObserver = new IntersectionObserver((entries) => {
